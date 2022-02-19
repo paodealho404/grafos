@@ -10,7 +10,7 @@ void menu_fw(void){
     for (int i = 0; i < a; i++)
     {
         int v1, v2, p;
-        scanf("%d %d %d", v1, v2, p);
+        scanf("%d %d %d", &v1, &v2, &p);
         grafos[v1][v2] = p;
     }
 
