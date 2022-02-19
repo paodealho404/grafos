@@ -3,10 +3,8 @@
 #include "floyd_warshall/floyd_warshall.h"
 #include "clique/clique.h"
 
-int main(){
+int main(int argc, char argv[]){
     int input;
-    printf("Escolha qual implementação de algoritmo deseja utilizar");
-    scanf("%d", &input);
     while(1){
         switch (input)
         {

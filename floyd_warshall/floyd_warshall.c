@@ -15,3 +15,6 @@ void menu_fw(void){
     }
 
 }
+void main(){
+    printf("Hello FW");
+}
