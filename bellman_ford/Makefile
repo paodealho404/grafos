@@ -1,4 +1,4 @@
-kruskal: bellman_ford.c
+kruskal: bellman_ford.c ../utils/utils.c
 	gcc bellman_ford.c -o bellman_ford
 
 clean:

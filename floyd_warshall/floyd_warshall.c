@@ -237,8 +237,8 @@ void execute(int s, int t, FILE *input_file, FILE *output_file, int is_sorted)
     fill(input_file, output_file, v, a, grafos);
     floyd_warshall(v, grafos);
     print_dist_matrix(output_file, v, grafos, s, t, is_sorted);
-    fclose(input_file);
-    fclose(output_file);
+    if( input_file) fclose(input_file);
+    if( output_file) fclose(output_file);
 }
 void main(int argc, char *argv[])
 {

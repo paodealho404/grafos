@@ -20,8 +20,8 @@ int extract_int_inputs(char *str, int *args);
 void initialize(int v, int graph[v][v], int value);
 #endif
 /**
- * @brief Este método recebe ponteiros para que irão indicar o valor informado
- * pelas flags informadas pelo usuário e que foram solicitadas na atividade (-h, -f, -o, -s, -i, -l)
+ * @brief Este método recebe ponteiros que irão indicar o valor das
+ * flags informadas pelo usuário e que foram solicitadas na atividade (-h, -f, -o, -s, -i, -l)
  * 
  * @param source  Vértice de origem, caso haja, caso não, é 0 por padrão.
  * @param target Vértice de origem, caso haja, caso não, é 0 por padrão.
@@ -32,6 +32,8 @@ void initialize(int v, int graph[v][v], int value);
  * @param argc Contador de argumentos informados, disponível na função main
  * @param argv Vetor de argumentos informados, disponível na função main
  * @param str_help Mensagem a ser informada para o usuário ao se utilizar a flag "-h".
+ * @return int Booleano se é para continuar a execução.
+ * 
  */
 int require_params(int *source, int *target, int *is_sorted, FILE **input, FILE **output, int argc, char *argv[], char *str_help);
 

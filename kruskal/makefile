@@ -1,5 +1,5 @@
-kruskal: kruskal.c
-	gcc kruskal.c -o kruskal
+kruskal: kruskal.c ../utils/utils.c
+	gcc kruskal.c ../utils/utils.c -o kruskal
 
 clean:
 	rm kruskal

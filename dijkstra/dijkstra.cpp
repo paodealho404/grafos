@@ -132,7 +132,7 @@ int main(int argc, char *argv[])
 {
     int source=0, target=0, is_sorted=0;
     FILE *input_file=NULL, *output_file=NULL;
-    string msg = "\nAlgoritmo de Dijkstra para caminho de menor custo.\nParametros suportados:\n\t-h [Ajuda]\n\t-i [Vertice de Origem]\n\t-l [Vertice de Destino]\n\t-f [Arquivo de Entrada]\n\t-o [Arquivo de Saida]\n\t-s [Ordenacao pelo custo do caminho]:\n\t\t- Caso um destino nao seja especificado,\n\t\to criterio eh o menor custo dos caminhos que compartilham a mesma origem\n\t\t- Caso uma origem nao seja especificada,\n\t\to criterio eh o menor custo dos caminhos que compartilham do mesmo destino\n\t\t- Caso ambos nao sejam especificados,\n\t\to criterio eh o menor custo dos caminhos que compartilham a mesma origem\n\t\tpara cada uma das possiveis origens\n\nInsira no mesmo formato especificado na lista.\ne.g.:\n4 6\n1 2 3\n2 1\n3 1\n1 3\n3 2\n2 4 5\n";
+    string msg = "\nAlgoritmo de Dijkstra para caminho de menor custo.\nParametros suportados:\n\t-h [Ajuda]\n\t-i [Vertice de Origem]\n\t-l [Vertice de Destino]\n\t-f [Arquivo de Entrada]\n\t-o [Arquivo de Saida]\n\t-s [Ordenacao pelo custo do caminho]:\n\t\t- Caso um destino nao seja especificado,\n\t\to criterio eh o menor custo dos caminhos que compartilham a mesma origem\n\t\t- Caso uma origem nao seja especificada,\n\t\to criterio eh o menor custo dos caminhos que compartilham do mesmo destino\n\t\t- Caso ambos nao sejam especificados,\n\t\to criterio eh o menor custo dos caminhos que compartilham a mesma origem\n\t\tpara cada uma das possiveis origens\n\nInsira no mesmo formato especif na lista.\ne.g.:\n4 6\n1 2 3\n2 1\n3 1\n1 3\n3 2\n2 4 5\n";
     char *msg_help = &msg[0];
     if(!require_params(&source, &target, &is_sorted, &input_file, &output_file, argc, argv, msg_help)) return 0;
     int args[2],c=0;
@@ -200,6 +200,6 @@ int main(int argc, char *argv[])
                 
         }
     }
-    fclose(input_file);
-    fclose(output_file);
+    if( input_file) fclose(input_file);
+    if( output_file) fclose(output_file);
 }
