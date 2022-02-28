@@ -1,5 +1,6 @@
-# Algoritmo de Floyd-Warshall
-
+# Algoritmo de Kruskal
+>## "O algoritmo de Kruskal é um algoritmo em teoria dos grafos que busca uma árvore geradora mínima para um grafo conexo com pesos. Isto significa que ele encontra um subconjunto das arestas que forma uma árvore que inclui todos os vértices, onde o peso total, dado pela soma dos pesos das arestas da árvore, é minimizado. Se o grafo não for conexo, então ele encontra uma floresta geradora mínima (uma árvore geradora mínima para cada componente conexo do grafo). O algoritmo de Kruskal é um exemplo de um algoritmo guloso (também conhecido como ganancioso ou greedy). "
+-[Wikipédia](https://pt.wikipedia.org/wiki/Algoritmo_de_Kruskal)
 ## Compilando
 ```bash
     cd kruskal
@@ -9,7 +10,7 @@
 ## Executando
 
 ```bash
-    ./kruskal -f entrada.in -o saida.txt
+    ./kruskal -f entrada.in -o saida.txt -s
 ```
 
 ## Exemplo de entrada
@@ -27,22 +28,11 @@
 ```
 
 ## Saída resultante
->### O custo do menor caminho do vértice s para o vértice t
+>### As arestas que compõem a AGM ordenadas pelo peso
 ```bash
-    (1, 1): 0
-    (1, 2): 2
-    (1, 3): 1
-    (1, 4): 7
-    (2, 1): 1
-    (2, 2): 0
-    (2, 3): 2
-    (2, 4): 5
-    (3, 1): 1
-    (3, 2): 1
-    (3, 3): 0
-    (3, 4): 6
-    (4, 1): Non Reachable
-    (4, 2): Non Reachable
-    (4, 3): Non Reachable
-    (4, 4): 0
+    (4, 6)
+    (2, 4)
+    (1, 4)
+    (1, 3)
+    (3, 5)
 ```
