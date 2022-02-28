@@ -25,7 +25,7 @@
 ```
 
 ## Saída resultante
->### O custo do menor caminho do vértice s para o vértice t
+>### O custo do menor caminho de todos os vértice s para todos os vértices t
 ```bash
     (1, 1): 0
     (1, 2): 2
