@@ -1,5 +1,7 @@
 # Algoritmo de Floyd-Warshall
-
+>### Na ciência da computação, o algoritmo de Floyd-Warshall (também conhecido como: Floyd's algorithm, Roy–Warshall algorithm, Roy–Floyd algorithm, ou WFI algorithm) é um algoritmo que resolve o problema de calcular o caminho mais curto entre todos os pares de vértices em um grafo orientado (com direção) e valorado (com peso). O algoritmo Floyd-Warshall foi publicado por Robert Floyd em 1962. Este algoritmo é o mesmo que foi publicado por Bernard Roy em 1959 e também por Stephen Warshall em 1962 para determinar o fechamento transitivo de um grafo. O formato atual do algoritmo de Floyd-Warshall com três loops de repetição foi descrito por Peter Ingerman em 1962.
+-[Wikipédia](https://pt.wikipedia.org/wiki/Algoritmo_de_Floyd-Warshall)
+O algoritmo é um bom exemplo de programação dinâmica. 
 ## Compilando
 ```bash
     cd floyd_warshall
